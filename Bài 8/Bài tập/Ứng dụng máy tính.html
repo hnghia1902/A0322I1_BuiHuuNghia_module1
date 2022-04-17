@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="n1">Nhấp số thứ nhất</label>
+<input id="n1" type="text" name="Nhap số thứ nhất">
+<label for="n2">Nhấp số thứ nhất</label>
+<input id="n2" type="text" name="Nhap số thứ nhất">
+<br>
+<button name="phep cong " type="button" onclick="phepcong()">additon+</button>
+<button name="phep tru" type="button" onclick="pheptru()">subtraction-</button>
+<button name="phep nhan" type="button" onclick="phepnhan()">multiplicationX</button>
+<button name="phep chia" type="button" onclick="phepchia()">division/</button>
+
+</body>
+<script>
+
+    function phepcong() {
+        let pc = parseFloat(document.getElementById("n1").value)
+        let pc1 =  parseFloat(document.getElementById("n2").value)
+        let pc3 = pc + pc1
+      alert(pc3);
+    }
+    function pheptru() {
+        let pc = parseFloat(document.getElementById("n1").value)
+        let pc1 =  parseFloat(document.getElementById("n2").value)
+        let pc3 = pc - pc1
+        alert(pc3);
+    }
+    function phepnhan() {
+        let pc = parseFloat(document.getElementById("n1").value)
+        let pc1 =  parseFloat(document.getElementById("n2").value)
+        let pc3 = pc * pc1
+        alert(pc3);
+    }
+    function phepchia() {
+        let pc = parseFloat(document.getElementById("n1").value)
+        let pc1 =  parseFloat(document.getElementById("n2").value)
+        let pc3 = pc / pc1
+        alert(pc3);
+    }
+</script>
+</html>

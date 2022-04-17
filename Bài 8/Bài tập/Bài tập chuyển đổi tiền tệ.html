@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<label for="money">Nhập số tiền</label>
+<input name="money" type="number" id="money" value="tien" placeholder="Số tiền cần đổi"/>
+<lable>Loại tiền gốc</lable>
+<select>
+    <option>Việt Nam</option>
+    <option>USD</option>
+
+</select>
+<lable>Tiền chuyển đổi</lable>
+<select>
+    <option >Việt Nam</option>
+    <option>USD</option>
+</select>
+
+<button style="background-color: blue" onclick="n1()" type="button">Chuyển đổi</button>
+<br>
+<h3>Tỉ giá:0.000043878894251864855</h3>
+<script>
+    var  T1 = 0.000043878894251864855;
+
+    function n1(){
+        let l=parseFloat(document.getElementById("money").value)/T1
+    alert(l);
+    }
+</script>
+</body>
+</html>
