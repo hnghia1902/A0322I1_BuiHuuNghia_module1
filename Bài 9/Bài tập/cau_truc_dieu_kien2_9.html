@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhap so a<input id="soa" type="number"><br>
+Nhap so b<input id="sob" type="number"><br>
+Nhap so c<input id="soc" type="number">
+<button onclick="tinh()">Tinh</button>
+<p id="hienthi" ></p>
+</body>
+<script>
+    function tinh() {
+        let a = parseInt(document.getElementById("soa").value)
+        let b = parseInt(document.getElementById("sob").value)
+        let c = parseInt(document.getElementById("soc").value)
+        if ( a + b > c && a,b,c>0) {
+            document.getElementById("hienthi").innerText = "Day la hinh tam giac"
+        } else if ( b + c > a && a,b,c>0) {
+            document.getElementById("hienthi").innerText = "Day la hinh tam giac"
+        } else if ( a + c > b && a,b,c>0) {
+            document.getElementById("hienthi").innerText = "Day la hinh tam giac"
+        } else {document.getElementById("hienthi").innerText = "Day khong phai  la hinh tam giac" }
+    }
+</script>
+</html>

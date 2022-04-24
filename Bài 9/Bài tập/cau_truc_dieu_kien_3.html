@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập số <input type="number" id="soa">
+<button onclick="tinh()">tính.</button>
+</body>
+<script>function tinh(){
+    let n = parseFloat(document.getElementById("soa").value)
+    if (n > 0){
+        document.write("số này lớn hơn 0");
+    }else if(n < 0) {
+        document.write("số này bé hơn 0");
+    } else {document.write("số này bằng 0")}
+}
+
+</script>
+</html>

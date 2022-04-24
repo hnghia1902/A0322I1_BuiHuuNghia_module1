@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhap so a <input type="number" id="soa">
+Nhap so b <input type="number" id="sob">
+<button onclick="tinh()">Tinh</button>
+<p id="hienthi"></p>
+</body>
+<script>
+    function tinh() {
+
+      let a = parseFloat(document.getElementById("soa").value)
+        let b = parseFloat(document.getElementById("sob").value)
+        if ( a == 0 && b == 0 )
+        { document.getElementById("hienthi").innerText = "phuong trinh co vo so nghiem" }
+        else if ( a == 0 && b != 0)
+        {document.getElementById("hienthi").innerText = "phuong trinh co vo so nghiem"}
+        else if (  a != 0) {document.getElementById("hienthi").innerText = "phuong trinh co nghiem la" + (-b/a)}
+    }
+</script>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập số a <input type="number" id="soa">
+Nhập số b <input type="number" id="sob">
+<button onclick="tinh()"> tính</button>
+</body>
+<script>
+    function tinh(){
+let n = parseFloat(document.getElementById("soa").value)
+let m = parseFloat(document.getElementById("sob").value)
+    if (n % m == 0){
+        document.write("số a chia hết cho số b");
+    }else{
+        document.write("số a chia không hết cho số b")
+    }
+    }
+</script>
+</html>

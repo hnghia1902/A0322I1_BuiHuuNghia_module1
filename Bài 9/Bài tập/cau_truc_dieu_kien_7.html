@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập số phút gọi <input type="number" id="so1">
+<button onclick="tinh()">Tính</button>
+<p id="sotien"></p>
+</body>
+<script>
+    function tinh() {
+            let batbuoc = 25000
+            let p50 = 600
+            let p150 = 400
+            let p200 = 200
+            let p501 = 50
+            let p50a1 = 50 * 600
+            let p150a1 = 150 * 400
+            let n = parseInt(document.getElementById("so1").value)
+                if (n <= 50 ) { document.getElementById("sotien").innerText = "Tổng tiền là:" + (batbuoc + (n * p50) )}
+                else if(n > 50 && n <= 200) {document.getElementById("sotien").innerText = "Tổng tiền là" + (batbuoc +((n-p501)*p150)+p50a1) }
+                else if(n > 200) {document.getElementById("sotien").innerText = "tổngtiền là: " + (batbuoc+((n-p200)*p200)+p50a1+p150a1)}
+
+    }
+</script>
+</html>

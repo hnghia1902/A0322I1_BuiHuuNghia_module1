@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="nhap">
+<button onclick="tinh()">Tinh</button>
+<p id="hienthi"></p>
+</body>
+<script>
+    function tinh() {
+let x = parseInt(document.getElementById("nhap").value)
+ if(x <= 120 && x > 0){document.getElementById("hienthi").innerText = "day la tuoi cua con nguoi" }
+ else { document.getElementById("hienthi").innerText = " day la tuoi cua quai vat"}
+    }
+</script>
+</html>

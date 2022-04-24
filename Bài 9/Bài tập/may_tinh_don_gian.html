@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="2">
+    <tr>
+        <td style="height: 20px;width: 30px" colspan="4"><p id="result"></p></td>
+    </tr>
+    <tr>
+        <td><button onclick="calBasic('1')">1</button></td>
+        <td><button onclick="calBasic('2')">2</button></td>
+        <td><button onclick="calBasic('3')">3</button></td>
+        <td><button onclick="calBasic('+')">+</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="calBasic('4')">4</button></td>
+        <td><button onclick="calBasic('5')">5</button></td>
+        <td><button onclick="calBasic('6')">6</button></td>
+        <td><button onclick="calBasic('-')">-</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="calBasic('7')">7</button></td>
+        <td><button onclick="calBasic('8')">8</button></td>
+        <td><button onclick="calBasic('9')">9</button></td>
+        <td><button onclick="calBasic('*')">x</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="calBasic('c')">c</button></td>
+        <td><button onclick="calBasic('0')">0</button></td>
+        <td><button onclick="calBasic('=')">=</button></td>
+        <td><button onclick="calBasic('/')">/</button></td>
+    </tr>
+</table>
+</body>
+<script>
+    function calBasic(x) {
+    let value = document.getElementById("result").innerText
+        switch (x) {
+            case"1":
+            case"2":
+            case"3":
+            case"4":
+            case"5":
+            case"6":
+            case"7":
+            case"8":
+            case"9":
+            case"0":
+            case"+":
+            case"-":
+            case"*":
+            case"/":
+                value = value + x;
+                break;
+                case "c":
+                    value = ""
+                break;
+            case "=":
+                value = eval(value);
+                break
+}
+        document.getElementById("result").innerText = value;
+    }
+</script>
+</html>

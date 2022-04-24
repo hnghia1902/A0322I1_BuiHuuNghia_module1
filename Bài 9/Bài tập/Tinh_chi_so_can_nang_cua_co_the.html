@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhap can nan</p> <input type="text" name="chieucao" id="chieucao">
+<p>Nhap chieu cao</p> <input type="text" name="cannang" id="cannang">
+<button name="check" type="button" onclick="o1()">check</button>
+<h1 id="p1"></h1>
+</body>
+<script>
+function o1() {
+ let f = parseFloat(document.getElementById("chieucao").value)
+ let g = parseFloat(document.getElementById("cannang").value)
+let bmi = f / g^2
+if (bmi < 18)
+    document.write("Underweight");
+else if (bmi < 25.0)
+    document.write("Normal");
+else if (bmi < 30.0)
+    document.write("Overweight");
+else
+    document.write("Obese");
+}
+</script>
+</html>

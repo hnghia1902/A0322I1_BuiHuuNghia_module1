@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập số a <input type="number" id="soa"><br>
+Nhập số b <input type="number" id="sob"><br>
+Nhập số c <input type="number" id="soc"><br>
+<button onclick="tinh()">Tính</button>
+</body>
+<script>
+    function tinh() {
+        let z = parseInt(document.getElementById("soa").value)
+        let x = parseInt(document.getElementById("sob").value)
+        let c = parseInt(document.getElementById("soc").value)
+        if ( z > x)
+        {
+            if (z > c){
+                document.write("A là số lớn nhất")
+            }
+        }
+        if ( x > c)
+        {
+            if (x > z){
+                document.write("B là số lớn nhất")
+            }
+        }
+        if ( c > x)
+        {
+            if (c > z){
+                document.write("c là số lớn nhất")
+            }
+        }
+    }
+</script>
+</html>

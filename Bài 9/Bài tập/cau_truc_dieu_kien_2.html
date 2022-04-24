@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập tuổi của bạn <input type="number" id="soa">
+<button onclick="tinh()"> tính</button>
+</body>
+<script>function tinh(){
+    let n = parseFloat(document.getElementById("soa").value)
+    if (n >= 16){
+        document.write("bạn đủ điều kiện học lớp 10");
+    }else{
+        document.write("còn nhỏ khi nào đủ tuổi rồi học");
+    }
+}
+
+</script>
+</html>

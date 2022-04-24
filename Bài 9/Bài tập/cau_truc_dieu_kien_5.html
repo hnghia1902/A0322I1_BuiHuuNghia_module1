@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Điểm giữa kì <input type="number" id="diem30"><br>
+Điểm cuối kì <input type="number" id="diem70"><br>
+<button onclick="tinh()">xếp hạng</button>
+</body>
+<script>
+    function tinh() {
+    var n = parseFloat(document.getElementById("diem30").value)*0.3;
+    var m = parseFloat(document.getElementById("diem70").value)*0.7;
+if (n + m >= 8) {document.write("học lực tốt")}
+else if ( m + n >= 6.5) {document.write("học lực khá")}
+else if ( m + n >=5) {document.write("học lực trung bình")}
+else{document.write("Học lực yếu")}
+    }
+</script>
+</html>

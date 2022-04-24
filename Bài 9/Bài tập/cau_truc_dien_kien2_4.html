@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhap canh a <input type="number" id="canha">
+Nhap canh b <input type="number" id="canhb">
+<button onclick="tinh()">Tinh</button>
+<p id="hienthi"></p>
+</body>
+<script>
+    function tinh() {
+        let a = parseFloat(document.getElementById("canha").value)
+        let b = parseFloat(document.getElementById("canhb").value)
+        document.getElementById("hienthi").innerText = "dien tich hinh chu nhat la" + ((a*b)*2) + "met vuong"
+
+    }
+</script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Giá trị hóa đơn bán được <input type="number" id="giatri"><br>
+<button onclick="tinh()">Nhận hoa hồng</button>
+<p id="hoahong"></p>
+
+</body>
+<script>
+    function tinh() {
+       let n = parseFloat(document.getElementById("giatri").value)
+       if (n <= 100000){document.getElementById("hoahong").innerText = "tiền hoa hồng là: " + n * 0.02}
+       else if(n > 100000 && n <= 500000){document.getElementById("hoahong").innerText = "tiền hoa hồng là: " + n * 0.05}
+       else {document.getElementById("hoahong").innerText = "tiền hoa hồng là: " + n * 0.09}
+    }
+</script>
+</html>
