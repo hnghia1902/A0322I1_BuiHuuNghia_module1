@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Bai 1 <button onclick="bai1()">-></button><br>
+Bai 2 <button onclick="bai2()">-></button><br>
+Bai 3 <button onclick="bai3()">-></button><br>
+Bai 4 <button onclick="bai4()">-></button><br>
+Bai 5 <button onclick="bai5()">-></button><br>
+</body>
+<script>
+    function bai1() {
+        let n1 = 0, n2 = 1, net;
+        for (let i = 0 ; i < 20;i++){
+            net = n1 + n2;
+            n1 = n2 ;
+            n2 = net;
+            document.write(n1 + "<br>");
+        }
+    }
+    function bai2() {
+        let n = 1
+        for (let i = 1; i < 10; i++)
+        {
+            n = n * i
+            document.write("giai thua la:"+n+"<br>")
+        }
+    }
+    function bai3() {
+let n = parseInt(prompt("nhap gia tri"))
+        for (let i = 0; i<n;i++){for(j=0;j<=i;j++) {
+            document.writeln(" * ")
+        }
+            document.writeln("<br/>")}
+    }
+    function bai4() {
+        let n = -1
+        let i= parseInt(prompt("nhap"))
+        for ( i ; i>n;i--){for(j=0;j<=i;j++) {
+            document.writeln(" * ")
+        }
+            document.writeln("<br/>")}
+    }
+    function bai5() {
+        let n = parseInt(prompt("nhap gia tri"))
+        for (let i = 0; i<n;i++) {
+            for (j = 0; j < i; j++) document.write(" ")
+        for (j = i; j < n; j++) document.write(" *")
+            document.write("<br/>")}
+
+    }
+
+</script>
+</html>
